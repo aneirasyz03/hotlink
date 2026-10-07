@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧚✨ Tiny Fairy Garden ✨🧚</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #ffe5ec, #ffc2d1, #e8dbfc);
+            color: #7d5a80;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            position: relative;
+        }
+        /* Tiny Fairy Card */
+        .fairy-card {
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(8px);
+            border: 2px dashed #ffb3c6;
+            border-radius: 20px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(255, 182, 193, 0.4);
+            max-width: 320px;
+            animation: float 4s ease-in-out infinite;
+            position: relative;
+            z-index: 2;
+        }
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+            color: #fb6f92;
+            text-shadow: 1px 1px #fff;
+        }
+        p {
+            font-size: 0.85rem;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+        .sparkles {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        /* Floating animation */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(-1deg); }
+            50% { transform: translateY(-10px) rotate(1deg); }
+        }
+        /* Background Sparkles */
+        .bg-sparkle {
+            position: absolute;
+            color: #fff;
+            text-shadow: 0 0 5px #ffb3c6;
+            font-size: 12px;
+            animation: twinkle 3s infinite ease-in-out;
+            user-select: none;
+        }
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.2; transform: scale(0.8); }
+            50% { opacity: 1; transform: scale(1.2); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Decorative Twinkling Pixie Dust -->
+    <div class="bg-sparkle" style="top: 15%; left: 20%; animation-delay: 0s;">✨</div>
+    <div class="bg-sparkle" style="top: 25%; right: 25%; animation-delay: 0.5s;">🌟</div>
+    <div class="bg-sparkle" style="top: 70%; left: 15%; animation-delay: 1s;">✨</div>
+    <div class="bg-sparkle" style="top: 80%; right: 15%; animation-delay: 1.5s;">🌸</div>
+    <div class="bg-sparkle" style="top: 45%; left: 75%; animation-delay: 0.2s;">🧚</div>
+
+    <div class="fairy-card">
+        <div class="sparkles">🌸✨🧚✨🌸</div>
+        <h1>Fairy Vault</h1>
+        <p>A safe, tiny place hidden away in the woods to store your magic hotlinks...</p>
+        
+        <!-- PLACE YOUR HOTLINKS / IMAGES BELOW THIS LINE -->
+        <!-- Example: <img src="https://your-link.com/image.png" style="display:none;"> -->
+        
+        <div class="sparkles">︶🏼꒦🏼︶🏼🍄🏼︶🏼꒦🏼︶🏼</div>
+    </div>
+
+</body>
+</html>
